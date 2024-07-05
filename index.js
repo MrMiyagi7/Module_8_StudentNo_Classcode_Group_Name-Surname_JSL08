@@ -4,9 +4,9 @@ class BankBranch {
   constructor(branchInfo) {
     if (!bankBranchInstance) {
       this.branchInfo = branchInfo;
-      bankBranchInstance = this;
+      bankBranchInstance = this; // Creates a a global reference if insatnce is null
     } else {
-      return bankBranchInstance;
+      return bankBranchInstance; // returns already exsiting instance and any new instances to overide original one
     }
   }
   getBranchInfo() {
