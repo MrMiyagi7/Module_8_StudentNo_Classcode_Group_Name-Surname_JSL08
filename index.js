@@ -9,6 +9,9 @@ class BankBranch {
       return bankBranchInstance;
     }
   }
+  getBranchInfo() {
+    return this.branchInfo;
+  }
 }
 
 // 3. In the `BankBranch` class:
