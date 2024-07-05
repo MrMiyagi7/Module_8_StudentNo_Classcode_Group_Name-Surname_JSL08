@@ -1,6 +1,6 @@
 let bankBranchInstance = null;
 
-// 2. Define a class called `BankBranch` for managing branch information.
+class BankBranch {}
 
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
