@@ -1,6 +1,15 @@
 let bankBranchInstance = null;
 
-class BankBranch {}
+class BankBranch {
+  constructor(branchInfo) {
+    if (!bankBranchInstance) {
+      this.branchInfo = branchInfo;
+      bankBranchInstance = this;
+    } else {
+      return bankBranchInstance;
+    }
+  }
+}
 
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
